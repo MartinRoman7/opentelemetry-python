@@ -1,0 +1,208 @@
+INFO:     192.168.65.1:36423 - "GET /docs HTTP/1.1" 200 OK
+INFO:     192.168.65.1:36423 - "GET /openapi.json HTTP/1.1" 200 OK
+{
+    "name": "GET /docs http send",
+    "context": {
+        "trace_id": "0x16812f28b62a501beb7ab25c5163629f",
+        "span_id": "0xa34b3cb6213e9aa5",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x0ccbd539d4aead05",
+    "start_time": "2024-07-16T19:06:56.445671Z",
+    "end_time": "2024-07-16T19:06:56.446093Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "http.status_code": 200,
+        "asgi.event.type": "http.response.start"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.25.0",
+            "service.name": "my-fastapi-service-with-automatic-instrumentation",
+            "telemetry.auto.version": "0.46b0"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "GET /docs http send",
+    "context": {
+        "trace_id": "0x16812f28b62a501beb7ab25c5163629f",
+        "span_id": "0x9229680294894240",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x0ccbd539d4aead05",
+    "start_time": "2024-07-16T19:06:56.446242Z",
+    "end_time": "2024-07-16T19:06:56.446297Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "asgi.event.type": "http.response.body"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.25.0",
+            "service.name": "my-fastapi-service-with-automatic-instrumentation",
+            "telemetry.auto.version": "0.46b0"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "GET /docs",
+    "context": {
+        "trace_id": "0x16812f28b62a501beb7ab25c5163629f",
+        "span_id": "0x0ccbd539d4aead05",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.SERVER",
+    "parent_id": null,
+    "start_time": "2024-07-16T19:06:56.441990Z",
+    "end_time": "2024-07-16T19:06:56.446312Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "http.scheme": "http",
+        "http.host": "172.17.0.4:8001",
+        "net.host.port": 8001,
+        "http.flavor": "1.1",
+        "http.target": "/docs",
+        "http.url": "http://172.17.0.4:8001/docs",
+        "http.method": "GET",
+        "http.server_name": "localhost:8001",
+        "http.user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+        "net.peer.ip": "192.168.65.1",
+        "net.peer.port": 36423,
+        "http.route": "/docs",
+        "http.status_code": 200
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.25.0",
+            "service.name": "my-fastapi-service-with-automatic-instrumentation",
+            "telemetry.auto.version": "0.46b0"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "GET /openapi.json http send",
+    "context": {
+        "trace_id": "0x731c4a89c6b19a1decbc6c8e522628a2",
+        "span_id": "0xb5569c20eed8025a",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xb49a8d9eaf512380",
+    "start_time": "2024-07-16T19:06:56.549276Z",
+    "end_time": "2024-07-16T19:06:56.549683Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "http.status_code": 200,
+        "asgi.event.type": "http.response.start"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.25.0",
+            "service.name": "my-fastapi-service-with-automatic-instrumentation",
+            "telemetry.auto.version": "0.46b0"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "GET /openapi.json http send",
+    "context": {
+        "trace_id": "0x731c4a89c6b19a1decbc6c8e522628a2",
+        "span_id": "0x43dc3d8ba52256a4",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0xb49a8d9eaf512380",
+    "start_time": "2024-07-16T19:06:56.549751Z",
+    "end_time": "2024-07-16T19:06:56.549804Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "asgi.event.type": "http.response.body"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.25.0",
+            "service.name": "my-fastapi-service-with-automatic-instrumentation",
+            "telemetry.auto.version": "0.46b0"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "GET /openapi.json",
+    "context": {
+        "trace_id": "0x731c4a89c6b19a1decbc6c8e522628a2",
+        "span_id": "0xb49a8d9eaf512380",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.SERVER",
+    "parent_id": null,
+    "start_time": "2024-07-16T19:06:56.548995Z",
+    "end_time": "2024-07-16T19:06:56.549816Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "http.scheme": "http",
+        "http.host": "172.17.0.4:8001",
+        "net.host.port": 8001,
+        "http.flavor": "1.1",
+        "http.target": "/openapi.json",
+        "http.url": "http://172.17.0.4:8001/openapi.json",
+        "http.method": "GET",
+        "http.server_name": "localhost:8001",
+        "http.user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+        "net.peer.ip": "192.168.65.1",
+        "net.peer.port": 36423,
+        "http.route": "/openapi.json",
+        "http.status_code": 200
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.25.0",
+            "service.name": "my-fastapi-service-with-automatic-instrumentation",
+            "telemetry.auto.version": "0.46b0"
+        },
+        "schema_url": ""
+    }
+}

@@ -1,0 +1,184 @@
+INFO:     192.168.65.1:40535 - "GET /docs HTTP/1.1" 200 OK
+INFO:     192.168.65.1:40535 - "GET /openapi.json HTTP/1.1" 200 OK
+{
+    "name": "GET /docs http send",
+    "context": {
+        "trace_id": "0x7ffa1f5497ee3f3c02cd57444eb50feb",
+        "span_id": "0x9a9d881e5c469dde",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x7417f0405afd9e37",
+    "start_time": "2024-07-16T19:04:31.362236Z",
+    "end_time": "2024-07-16T19:04:31.362798Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "http.status_code": 200,
+        "asgi.event.type": "http.response.start"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "my-fastapi-service-with-manual-instrumentation"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "GET /docs http send",
+    "context": {
+        "trace_id": "0x7ffa1f5497ee3f3c02cd57444eb50feb",
+        "span_id": "0x21246acc690e2838",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x7417f0405afd9e37",
+    "start_time": "2024-07-16T19:04:31.362924Z",
+    "end_time": "2024-07-16T19:04:31.363172Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "asgi.event.type": "http.response.body"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "my-fastapi-service-with-manual-instrumentation"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "GET /docs",
+    "context": {
+        "trace_id": "0x7ffa1f5497ee3f3c02cd57444eb50feb",
+        "span_id": "0x7417f0405afd9e37",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.SERVER",
+    "parent_id": null,
+    "start_time": "2024-07-16T19:04:31.361689Z",
+    "end_time": "2024-07-16T19:04:31.363206Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "http.scheme": "http",
+        "http.host": "172.17.0.5:8000",
+        "net.host.port": 8000,
+        "http.flavor": "1.1",
+        "http.target": "/docs",
+        "http.url": "http://172.17.0.5:8000/docs",
+        "http.method": "GET",
+        "http.server_name": "localhost:8000",
+        "http.user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+        "net.peer.ip": "192.168.65.1",
+        "net.peer.port": 40535,
+        "http.route": "/docs",
+        "http.status_code": 200
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "my-fastapi-service-with-manual-instrumentation"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "GET /openapi.json http send",
+    "context": {
+        "trace_id": "0xb9c6321e7faf624fb6d854d2c8b638b8",
+        "span_id": "0x5273d2ebc0b6527d",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x219739c89e150777",
+    "start_time": "2024-07-16T19:04:31.607060Z",
+    "end_time": "2024-07-16T19:04:31.607343Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "http.status_code": 200,
+        "asgi.event.type": "http.response.start"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "my-fastapi-service-with-manual-instrumentation"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "GET /openapi.json http send",
+    "context": {
+        "trace_id": "0xb9c6321e7faf624fb6d854d2c8b638b8",
+        "span_id": "0x24724135cfd708e5",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.INTERNAL",
+    "parent_id": "0x219739c89e150777",
+    "start_time": "2024-07-16T19:04:31.607417Z",
+    "end_time": "2024-07-16T19:04:31.607515Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "asgi.event.type": "http.response.body"
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "my-fastapi-service-with-manual-instrumentation"
+        },
+        "schema_url": ""
+    }
+}
+{
+    "name": "GET /openapi.json",
+    "context": {
+        "trace_id": "0xb9c6321e7faf624fb6d854d2c8b638b8",
+        "span_id": "0x219739c89e150777",
+        "trace_state": "[]"
+    },
+    "kind": "SpanKind.SERVER",
+    "parent_id": null,
+    "start_time": "2024-07-16T19:04:31.605907Z",
+    "end_time": "2024-07-16T19:04:31.607534Z",
+    "status": {
+        "status_code": "UNSET"
+    },
+    "attributes": {
+        "http.scheme": "http",
+        "http.host": "172.17.0.5:8000",
+        "net.host.port": 8000,
+        "http.flavor": "1.1",
+        "http.target": "/openapi.json",
+        "http.url": "http://172.17.0.5:8000/openapi.json",
+        "http.method": "GET",
+        "http.server_name": "localhost:8000",
+        "http.user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+        "net.peer.ip": "192.168.65.1",
+        "net.peer.port": 40535,
+        "http.route": "/openapi.json",
+        "http.status_code": 200
+    },
+    "events": [],
+    "links": [],
+    "resource": {
+        "attributes": {
+            "service.name": "my-fastapi-service-with-manual-instrumentation"
+        },
+        "schema_url": ""
+    }
+}
