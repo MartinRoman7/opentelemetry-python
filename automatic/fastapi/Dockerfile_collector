@@ -14,10 +14,10 @@ COPY . .
 
 EXPOSE 8002
 
-# Set environment variables for OpenTelemetry to use the ConsoleSpanExporter
-ENV OTEL_TRACES_EXPORTER=otlp
-ENV OTEL_LOGS_EXPORTER=otlp
-ENV OTEL_METRICS_EXPORTER=otlp
-ENV OTEL_RESOURCE_ATTRIBUTES=service.name=my-fastapi-service-with-automatic-instrumentation
+ENV OTEL_PYTHON_LOGGING_AUTO_INSTRUMENTATION_ENABLED=true
+ENV OTEL_METRICS_EXPORTER="otlp"
+ENV OTEL_LOGS_EXPORTER="otlp"
+ENV OTEL_TRACES_EXPORTER="otlp"
+ENV OTEL_RESOURCE_ATTRIBUTES=service.name=my-fastapi-service-with-automatic-instrumentation-collector
 
 CMD ["opentelemetry-instrument", "uvicorn", "app.server_automatic:app", "--host", "0.0.0.0", "--port", "8002"]

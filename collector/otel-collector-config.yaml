@@ -1,16 +1,27 @@
-# otel-collector-config.yaml
+# /tmp/otel-collector-config.yaml
 receivers:
   otlp:
     protocols:
       grpc:
-      http:
+        endpoint: otel-collector:4317
+
+processors:
+  batch:
 
 exporters:
   logging:
-    loglevel: debug
 
 service:
   pipelines:
     traces:
       receivers: [otlp]
+      processors: [batch]
+      exporters: [logging]
+    metrics:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [logging]
+    logs:
+      receivers: [otlp]
+      processors: [batch]
       exporters: [logging]
