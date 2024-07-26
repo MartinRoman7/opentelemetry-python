@@ -9,19 +9,21 @@ processors:
   batch:
 
 exporters:
-  logging:
+  debug:
+    verbosity: detailed
+    sampling_initial: 5
 
 service:
   pipelines:
     traces:
       receivers: [otlp]
       processors: [batch]
-      exporters: [logging]
+      exporters: [debug]
     metrics:
       receivers: [otlp]
       processors: [batch]
-      exporters: [logging]
+      exporters: [debug]
     logs:
       receivers: [otlp]
       processors: [batch]
-      exporters: [logging]
+      exporters: [debug]

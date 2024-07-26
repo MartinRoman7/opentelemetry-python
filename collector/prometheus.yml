@@ -6,10 +6,10 @@ scrape_configs:
     scrape_interval: 10s
     static_configs:
       - targets: ['localhost:9090']
-  - job_name: 'otel-collector'
+  - job_name: 'fastapi-service'
     scrape_interval: 10s
     static_configs:
-      - targets: ['otel-collector:4317']
+      - targets: ['fastapi-service:9464']
   - job_name: 'node'
     scrape_interval: 10s
     static_configs:
